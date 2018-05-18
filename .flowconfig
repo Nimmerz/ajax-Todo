@@ -4,7 +4,9 @@
 
 [libs]
 ./flow-typed/npm/
-
 [options]
 module.name_mapper='.*\.\(styl\|svg\|png\|jpg\|cur\)$' -> 'Stub'
+module.file_ext=.styl
+module.name_mapper.extension='styl' -> 'empty/object'
 unsafe.enable_getters_and_setters=true
+
